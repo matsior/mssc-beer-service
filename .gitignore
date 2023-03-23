@@ -140,3 +140,6 @@ Desktop.ini
 .eslintcache
 /.idea/
 
+/target/generated-sources/annotations/guru/springframework/msscbeerservice/web/mappers/BeerMapperImpl.java
+/target/classes/application.properties
+/target/classes/data.sql
