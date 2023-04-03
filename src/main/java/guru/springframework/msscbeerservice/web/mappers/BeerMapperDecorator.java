@@ -22,6 +22,11 @@ public class BeerMapperDecorator implements BeerMapper {
 
   @Override
   public BeerDto beerToBeerDto(final Beer beer) {
+    return mapper.beerToBeerDto(beer);
+  }
+
+  @Override
+  public BeerDto beerToBeerDtoWithInventory(final Beer beer) {
     final BeerDto dto = mapper.beerToBeerDto(beer);
     dto.setQuantityOnHand(beerInventoryService.getOnHandInventory(beer.getId()));
     return dto;
